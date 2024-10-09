@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./game.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- <link rel="stylesheet" href="./bootstrap.css">
+    <script src="./bootstrap.js"></script>
+    <script src="./popper.min.js"></script> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="board">
+      <div class="topRowContainer">
+        <div class="topRow club" title="نادي الحظ">
+          <span>نادي الحظ</span>
+        </div>
+        <div id="بني غازي" class="topRow card bab" title="بني غازي - 150 جنية">
+          <span>بني غازي</span>
+          <span>150 جنية</span>
+          <div class="arrow arrowTop"></div>
+        </div>
+        <div id="عدن" class="topRow card bab" title="عدن - 100 جنية">
+          <span>عدن</span>
+          <span>100 جنية</span>
+          <div class="arrow arrowTop"></div>
+        </div>
+        <div class="topRow judgement" title="محاكمة">
+          <span>محاكمة</span>
+        </div>
+        <div id="البحرين" class="topRow card bab" title="البحرين - 90 جنية">
+          <span>البحرين</span>
+          <span>90 جنية</span>
+          <div class="arrow arrowTop"></div>
+        </div>
+        <div class="topRow luck" title="حظك">
+          <span>حظك</span>
+        </div>
+        <div
+          id="الدار البيضاء"
+          class="topRow card atm"
+          title="الدار البيضاء - 250 جنية"
+        >
+          <span>الدار البيضاء</span>
+          <span>250 جنية</span>
+          <div class="arrow arrowTop"></div>
+        </div>
+        <div class="topRow Gas" title="محطة البنزين">
+          <span>محطة البنزين</span>
+        </div>
+        <div id="تونس" class="topRow card atm" title="تونس - 200 جنية">
+          <span>تونس</span>
+          <span>200 جنية</span>
+          <div class="arrow arrowTop"></div>
+        </div>
+        <div id="الجزائر" class="topRow card atm" title="الجزائر - 300 جنية">
+          <span>الجزائر</span>
+          <span>300 جنية</span>
+          <div class="arrow arrowTop"></div>
+        </div>
+        <div class="topRow bus" title="الاتوبيس السريع">
+          <span>الاتوبيس السريع</span>
+        </div>
+      </div>
+
+      <div class="bottomRowContainer">
+        <div class="bottomRow start" title="البداية">
+          <span>البداية</span>
+        </div>
+        <div id="قطر" class="bottomRow card skq" title="قطر - 150 جنية">
+          <span>قطر</span>
+          <span>150 جنية</span>
+          <div class="arrow arrowBottom"></div>
+        </div>
+        <div id="الكويت" class="bottomRow card skq" title="الكويت - 250 جنية">
+          <span>الكويت</span>
+          <span>250 جنية</span>
+          <div class="arrow arrowBottom"></div>
+        </div>
+        <div class="bottomRow judgement" title="محاكمة">
+          <span>محاكمة</span>
+        </div>
+        <div id="صنعاء" class="bottomRow card skq" title="صنعاء - 250 جنية">
+          <span>صنعاء</span>
+          <span>250 جنية</span>
+          <div class="arrow arrowBottom"></div>
+        </div>
+        <div class="bottomRow luck" title="حظك">
+          <span>حظك</span>
+        </div>
+        <div id="بورسعيد" class="bottomRow card bok" title="بورسعيد - 250 جنية">
+          <span>بورسعيد</span>
+          <span>250 جنية</span>
+          <div class="arrow arrowBottom"></div>
+        </div>
+        <div id="الاقصر" class="bottomRow card Luxor" title="الاقصر - 200 جنية">
+          <span>الاقصر</span>
+          <span>200 جنية</span>
+          <div class="arrow arrowBottom"></div>
+        </div>
+        <div id="عمان" class="bottomRow card bok" title="عمان - 250 جنية">
+          <span>عمان</span>
+          <span>250 جنية</span>
+          <div class="arrow arrowBottom"></div>
+        </div>
+        <div id="الخرطوم" class="bottomRow card bok" title="الخرطوم - 200 جنية">
+          <span>الخرطوم</span>
+          <span>200 جنية</span>
+          <div class="arrow arrowBottom"></div>
+        </div>
+        <div class="bottomRow jail" title="سجن الحظ">
+          <span>سجن الحظ</span>
+        </div>
+      </div>
+
+      <div class="leftColContainer">
+        <div id="بغداد" class="leftCol card brb" title="بغداد - 250 جنية">
+          <span>بغداد</span>
+          <span>250 جنية</span>
+          <div class="arrow arrowLeft"></div>
+        </div>
+        <div id="الرياض" class="leftCol card brb" title="الرياض - 250 جنية">
+          <span>الرياض</span>
+          <span>250 جنية</span>
+          <div class="arrow arrowLeft"></div>
+        </div>
+        <div id="بيروت" class="leftCol card brb" title="بيروت - 300 جنية">
+          <span>بيروت</span>
+          <span>300 جنية</span>
+          <div class="arrow arrowLeft"></div>
+        </div>
+        <div
+          title="اسحب ورقة حظك و ورقة محكمة"
+          class="leftCol luckAndjudgement"
+        >
+          <span>?</span>
+        </div>
+        <div id="غزة" class="leftCol card kg" title="غزة - 250 جنية">
+          <span>غزة</span>
+          <span>250 جنية</span>
+          <div class="arrow arrowLeft"></div>
+        </div>
+        <div id="القدس" class="leftCol card kg" title="القدس - 300 جنية">
+          <span>القدس</span>
+          <span>300 جنية</span>
+          <div class="arrow arrowLeft"></div>
+        </div>
+      </div>
+
+      <div class="rightColContainer">
+        <div
+          id="الاسكندرية"
+          class="rightCol card ha"
+          title="الاسكندرية - 325 جنية"
+        >
+          <span>الاسكندرية</span>
+          <span>325 جنية</span>
+          <div class="arrow arrowRight"></div>
+        </div>
+        <div id="حلب" class="rightCol card ha" title="حلب - 300 جنية">
+          <span>حلب</span>
+          <span>300 جنية</span>
+          <div class="arrow arrowRight"></div>
+        </div>
+        <div class="rightCol judgement" title="محاكمة">
+          <span>محاكمة</span>
+        </div>
+        <div id="اسوان" class="rightCol card cda" title="اسوان - 200 جنية">
+          <span>اسوان</span>
+          <span>200 جنية</span>
+          <div class="arrow arrowRight"></div>
+        </div>
+        <div id="دمشق" class="rightCol card cda" title="دمشق - 300 جنية">
+          <span>دمشق</span>
+          <span>300 جنية</span>
+          <div class="arrow arrowRight"></div>
+        </div>
+        <div id="القاهرة" class="rightCol card cda" title="القاهرة - 450 جنية">
+          <span>القاهرة</span>
+          <span>450 جنية</span>
+          <div class="arrow arrowRight"></div>
+        </div>
+      </div>
+
+      <div id="player"></div>
+      <div class="luck-cards">حظك</div>
+      <div class="judgement-cards">محاكمة</div>
+    </div>
+    <button id="dice">
+      <div class="dot one"></div>
+      <div class="dot two"></div>
+      <div class="dot three"></div>
+      <div class="dot four"></div>
+      <div class="dot five"></div>
+      <div class="dot six"></div>
+    </button>
+    <div id="displayDiceNumber">The Dice</div>
+    <div id="screenBoard">
+      <span id="screenBoardTurn"></span>
+      <span id="screenBoardDecisions"></span>
+      <span
+        style="font-size: 20px; color: red"
+        id="screenYouMustChooseFirst"
+      ></span>
+      <div class="btns">
+        <!-- <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button> -->
+      </div>
+    </div>
+    <div class="accordion"></div>
+    <button class="swapBtn">Swap</button>
+    <div class="swapPage">
+      <div class="swapPlayer"></div>
+      <div class="swapPlayerSlider">
+        <input min="0" max="1199" type="range" />
+        <div class="swapPlayerSliderValue">Value =</div>
+        <span class="plus">+</span>
+        <span class="minus">-</span>
+      </div>
+      <div class="swapPlayerCitys"></div>
+      <div class="otherSwapPlayers"></div>
+      <div class="otherSwapPlayersSlider">
+        <input min="0" max="1199" type="range" />
+        <div class="otherSwapPlayersValue">Value =</div>
+        <span class="plus">+</span>
+        <span class="minus">-</span>
+      </div>
+      <div class="otherSwapPlayersCitys"></div>
+      <div class="swapPageLineX"></div>
+      <div class="swapPageLineY"></div>
+      <div class="swapPageClose">X</div>
+      <div class="submitBtns">
+        <!-- <div class="submitBtn">Submit</div> -->
+      </div>
+    </div>
+    <div class="cardDeatalisShower">
+      <select id="citySelect">
+        <option value="">Select a city</option>
+
+        <option value="2">القدس</option>
+        <option value="3">غزة</option>
+        <option value="5">بيروت</option>
+        <option value="6">الرياض</option>
+        <option value="7">بغداد</option>
+        <option value="9">بني غازي</option>
+        <option value="10">عدن</option>
+        <option value="12">البحرين</option>
+        <option value="14">الدار البيضاء</option>
+        <option value="16">تونس</option>
+        <option value="17">الجزائر</option>
+        <option value="19">الاسكندرية</option>
+        <option value="20">حلب</option>
+        <option value="22">اسوان</option>
+        <option value="23">دمشق</option>
+        <option value="24">القاهرة</option>
+        <option value="26">الخرطوم</option>
+        <option value="27">عمان</option>
+        <option value="28">الاقصر</option>
+        <option value="29">بورسعيد</option>
+        <option value="31">صنعاء</option>
+        <option value="33">الكويت</option>
+        <option value="34">قطر</option>
+      </select>
+
+      <div class="cardDetails">
+        <h1 id="cardDetailsCityName">المدينة</h1>
+        <div>يدفع المار لصاحب هذه البلد</div>
+        <div id="passingFee">ايجار مرور فقط جنية</div>
+        <div>
+          <div id="garagePrice">سعر الجراج:</div>
+          <div id="restPrice">سعر الاستراحة:</div>
+          <div id="marketPrice">سعر السوق:</div>
+          <div id="garageRent">ايجار الجراج:</div>
+          <div id="restRent">ايجار الاستراحة:</div>
+          <div id="marketRent">ايجار السوق:</div>
+        </div>
+      </div>
+    </div>
+    <button id="UpgradeBtn">Upgrade</button>
+    <div class="upgradePage">
+      <div class="upgradePageClose">X</div>
+      <div class="upgradePageLineX"></div>
+      <div class="upgradePlayer"></div>
+      <div class="upgradeText">hhhhhhh</div>
+      <div id="submitBtnsUpgrade" class="submitBtns"></div>
+    </div>
+    <button id="sellBtn">Sell</button>
+    <div class="sellPage">
+      <div class="sellPageClose">X</div>
+      <div class="sellPageLineX"></div>
+      <div class="sellPlayer"></div>
+      <div class="sellText">hhhhhhh</div>
+      <div class="sellPlayerCitys"></div>
+      <div class="moneyYouGetWhenSellCitysScreen"></div>
+      <div id="submitBtnsSell" class="submitBtns"></div>
+    </div>
+    <i id="winningCrown" class="fa-solid fa-crown"></i>
+    <div class="winning">yossef is the Winner !!!</div>
+    <script src="./game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.playername,
+.playercolor {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.playername label,
+.playercolor label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.playername input,
+.playercolor input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.playername span {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+.playercolor span {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.player {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+}
